@@ -1,0 +1,84 @@
+/******************************************************************************
+
+Welcome to GDB Online.
+  GDB online is an online compiler and debugger tool for C, C++, Python, PHP, Ruby, 
+  C#, OCaml, VB, Perl, Swift, Prolog, Javascript, Pascal, COBOL, HTML, CSS, JS
+  Code, Compile, Run and Debug online from anywhere in world.
+
+*******************************************************************************/
+//WEATHER APP
+//K.X.BRIJEETHA JOSEPHINE
+//Vivekanadha College of Engineering for Women
+
+#include<iostream>
+using namespace std;
+int main()
+{
+    string location;
+    int choice;
+    cout<<"Weather Report"<<endl;
+    cout<<"Enter your location:"<<endl;
+    cin>>location;
+    cout<<"1.Today"
+          "\n2.Yesterday"
+          "\n3.Tomorrow"
+          "\n4.Entire week"
+          "\n5.Entire month";
+    cout<<"\nEnter the period to create a report:"<<endl;
+    cin>>choice;
+    //using switch case we created a weather app
+    switch(choice)
+    {
+        case 1:
+        {
+            cout<<"Cloudy"<<endl;
+            cout<<"Temperature: 26°C"<<endl;
+            break;
+        }
+        case 2:
+        {
+            cout<<"Rain"<<endl;
+            cout<<"Temperature: 22°C"<<endl;
+            break;
+        }
+        case 3:
+        {
+            cout<<"Sunny"<<endl;
+            cout<<"Temperature: 32°C"<<endl;
+            break;
+        }
+        case 4:
+        {           
+            cout<<"Sunday - Slight Rain(22°C)"
+                  "\nMonday - Sunny(32°C)"
+                  "\nTuesday - Rainfall(24°C)\n"
+                  "Wednesday - Heavy Sun(32°C)"
+                  "\nThursday - Cloudy(24°C)"
+                  "\nFriday - Wind(25°C)"
+                  "\nSaturday - Chill(24°C)"
+ <<endl;
+            cout<<"Enjoy Your Week Weather"<<endl;
+            break;
+        }
+        case 5:
+        {
+            cout<<"January - Cloudy(29°C)"
+                  "\nFebruary - Rainfall(26°C) "
+                  "\nMarch - Sunny(30°C)"
+                  " \nApril - Heavy Sun(32°C)"
+                  "\nMay - Sunny(31°C)"
+                  "\nJune - Rainfall(22°C)"
+                  "\nJuly - Wind(20°C)"
+                  "\nAugust - Chill(25°C)"
+                  "\nSeptember - Sunny(30°C)"
+                  "\nOctober - Slight Rain(23°C)"
+                  "\nNovember - Windy(20°C)"
+                  "\nDecember - Chill(24°C)"
+    <<endl;
+             cout<<"Your Month Weather Report"<<endl;
+                  break;
+        }
+    }
+    cout<<"\nTHANK YOU"<<endl;
+    return 0;
+}
